@@ -34,3 +34,12 @@ curl http://localhost:3000/api/agents/5705ddee3a443a574aa63b26 --header "Authori
 ```
 curl -X "DELETE" --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiSmFtZXMgQm9uZCIsImNvZGVuYW1lIjoiMDA3IiwiaWQiOiI1NzA1Y2ZmODY2NzFjZThkNDc5ZWRkNzYiLCJpYXQiOjE0NjAwMDIyMjB9.uvMa-EjrlcJp1bgNNg73uuLlJt_55z_ygHQIYDGNEJs" http://localhost:3000/api/agents/570de9f89d254d06d16c0af0
 ```
+
+##### Update a User
+```
+curl -X PUT -H "Content-Type: application/json" -d '{
+  "name" : "Irvinder",
+  "codename": 123
+
+}' --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiSmFtZXMgQm9uZCIsImNvZGVuYW1lIjoiMDA3IiwiaWQiOiI1NzA1Y2ZmODY2NzFjZThkNDc5ZWRkNzYiLCJpYXQiOjE0NjAwMDIyMjB9.uvMa-EjrlcJp1bgNNg73uuLlJt_55z_ygHQIYDGNEJs" http://localhost:3000/api/agents/5705ddea3a443a574aa63b25
+```
